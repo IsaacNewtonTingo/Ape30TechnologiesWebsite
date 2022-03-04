@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire us || Ape 30 technologies</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="icon" type="image/x-icon" href={% static 'assetss/logo.png' %}>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
+    <script
+      src="https://kit.fontawesome.com/0a5c0d1ef5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="logoContainer">
+          <img class="logo" src={% static 'assetss/logo.png' %} alt="Ape30 technologies logo">
+          <img onclick="toggleMenu()" class="menuIcon" src={% static 'assetss/menu.png' %} alt="Ape30 technologies logo">
+          
+      </div>
+      <nav class="menuItems" id="menuList">
+          <ul>
+              <li><a  href="/" > Home</a> </li>
+              <li><a href="/#aboutUs"> About us</a> </li>
+              <li><a href="/#ourWork"> Our work</a> </li>
+              <li><a href="contactUs"> Contact us</a> </li>
+              <li><a class="current"href="hireUs"> Hire us</a> </li>
+             
+          </ul>
+      </nav>
+      
+  </header>
+
+    <section class="reachUs">
+      <div class="leftTees">
+        <h1 id="webUI">1. Web UI/UX design</h1>
+        <h4>
+          We use figma in the design of web interfaces. Different websites have
+          different designs and the complexity of your website will definitely
+          affect the cost. We are more than capable to present to you the
+          perfect unique designs with a great user experience. With the help of
+          our talented team, we will make your dreams come true
+        </h4>
+        <h1 id="webDev">2. Web development</h1>
+        <h4>
+          For front end web development, we use html, css and javascript. We can
+          also use tools like Wix or wordpress if the client wants us to. We use
+          Django for our backend and database. With all these tools and by the
+          help of our programmers, we are able to deliver scalable and
+          responsive websites. The content and nature of your website determines
+          the cost. reach out to us so we can discuss your project.
+        </h4>
+        <h1 id="mobileUI">3. Mobile app UI/UX design</h1>
+        <h4>
+          The disign of mobile application user interface is also done by the
+          help of figma. The complexity of your application design will
+          definitely affect the cost. We are more than capable to present to you
+          the perfect unique designs with a great user experience. With the help
+          of our talented team, we will make your dreams come true
+        </h4>
+        <h1 id="mobileDev">4. Mobile app development</h1>
+        <h4>
+          React native framework is what we use for front-end mobile application
+          development. For back-end, we use NodeJs and our databases are mainly
+          MongoDB and Firebase. We are able to develop cross-platform native
+          mobile applications by writing the code once. Also, the time of
+          application developed determines the cost. Reach out to us and let's
+          discuss.
+        </h4>
+      </div>
+
+      {% if name %}
+      <div class="formDivHire">
+        <h6 class="success">Submitted successfully</h6>
+        <h1>What's in your mind?</h1>
+        <h4>Drop your details below. We typically respond within an hour</h4>
+
+        <form action="" method="post">
+          {% csrf_token %}
+          <label for="name">Name *</label>
+          <input type="text" name="name" placeholder="e.g John Doe" required />
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="e.g john@gmail.com"
+            required
+          />
+          <label for="phoneNumber">Phone number *</label>
+          <input
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g +254724753175"
+            required
+          />
+          <label for="message">Message *</label>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            required
+            placeholder="Your message here"
+          ></textarea>
+
+          <input class="subBtn" type="submit" />
+        </form>
+      </div>
+
+      {% else %}
+
+      <div class="formDivHire">
+        <h1>What's in your mind?</h1>
+        <h4>Drop your details below. We typically respond within an hour</h4>
+
+        <form action="" method="post">
+          {% csrf_token %}
+          <label for="name">Name *</label>
+          <input type="text" name="name" placeholder="e.g John Doe" required />
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="e.g john@gmail.com"
+            required
+          />
+          <label for="phoneNumber">Phone number *</label>
+          <input
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g +254724753175"
+            required
+          />
+          <label for="message">Message *</label>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            required
+            placeholder="Your message here"
+          ></textarea>
+
+          <input class="subBtn" type="submit" />
+        </form>
+      </div>
+      {% endif %}
+    </section>
+
+    <footer>
+      <div>
+          <h2>Follow us</h2>
+          <a href="https://www.instagram.com/ape30technologies/" target="_blank"> <img class="socials" src= {% static 'assetss/Instagram-logo-free-download-PNG.png' %} alt="instagram logo "></a>
+          <a href="https://twitter.com/Ape30Tech"target="_blank"> <img class="socials" src= {% static 'assetss/Logo-Twitter-icon-transparent-PNG.png' %} alt="twitter logo"></a>
+          <a href="https://www.facebook.com/Ape-30-Technologies-109660784993525/"target="_blank"> <img class="socials" src={% static 'assetss/Popular-facebook-Logo-png.png' %} alt="facebook logo"></a>
+          <a href="https://www.linkedin.com/company/ape-30-technologies/" target="_blank"> <img class="socials" src={% static 'assetss/Linkedin-logo-on-transparent-Background-PNG-.png' %} alt="linkedin logo"></a>
+      </div>
+      <div>
+          <h2>Contact us</h2> 
+          <h6> <a href="tel:+254724753175">+254724753175</a> </h6>
+          <h6> <a href="mailto:ape30technologies@gmail.com">ape30technologies@gmail.com</a> </h6>
+          <h6> <a href="mailto:ape30info@gmail.com">ape30info@gmail.com</a> </h6>
+          <h6> <a href="www.ape30technologies.com">www.ape30technologies.com</a> </h6>
+                   
+         
+      </div>
+      <div>
+          <h2>Quick links</h2>
+          <h6> <a  href="/">Home</a> </h6>
+          <h6> <a href="/#aboutUs">About us</a> </h6>
+          <h6> <a href="/#ourWork">Our work</a> </h6>
+          <h6> <a href="contactUs">Contact us</a> </h6>          
+          <h6> <a class="current"href="hireUs">Hire us</a> </h6>
+          
+      </div>
+
+      <h4>Designed and developed by Ape 30 technologies</h4>
+</footer>
+
+
+
+
+    <script>
+      function goToAz() {
+        window.open("https://www.azbinary.com/");
+      }
+
+      function goToMsichana() {
+        window.open("https://www.msichanaempowermentkuria.org/");
+      }
+
+      var menuList=document.getElementById("menuList")
+        menuList.style.maxHeight="0px";
+        function toggleMenu(){
+            if( menuList.style.maxHeight=="0px"){
+              
+              menuList.style.maxHeight="400px"           
+            }
+            
+            else{
+              menuList.style.maxHeight="0px"
+
+            }
+          }      
+
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

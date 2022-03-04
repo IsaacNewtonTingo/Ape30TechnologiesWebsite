@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ape 30 technologies || Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" type="image/x-icon" href={% static 'assetss/logo.png' %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+
+    <script src="https://kit.fontawesome.com/0a5c0d1ef5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logoContainer">
+            <img class="logo" src={% static 'assetss/logo.png' %} alt="Ape30 technologies logo">
+            <img onclick="toggleMenu()" class="menuIcon" src={% static 'assetss/menu.png' %} alt="Ape30 technologies logo">
+            
+        </div>
+        <nav class="menuItems" id="menuList">
+            <ul>
+                <li><a class="current" href="/" > Home</a> </li>
+                <li><a href="#aboutUs"> About us</a> </li>
+                <li><a href="#ourWork"> Our work</a> </li>
+                <li><a href="contactUs"> Contact us</a> </li>
+                <li><a href="hireUs"> Hire us</a> </li>
+               
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section class="coverImageContainer">
+        <div class="topMainLeftText">
+            <h1>We design and develop highly scalable and  responsive webistes 
+                 and mobile applications</h1>
+            <h4>With a team of our highly skilled developers, designer, and by the 
+                incorporation of best technologies and practices, we are ableto deliver  
+                the best mobile and web applications. Let Ape 30 Technologies help you 
+                concieve, design, build, ship and scale digital products so you can 
+                solve real-world customer problems. </h4>
+            <button class="mainBtn" onclick="goToHireUs()">Hire us</button>
+        </div>
+        
+        <img class="leadGif" src= {% static 'assetss/ladycode.gif' %} alt="code with ape 30 technologies">
+
+    </section>
+
+    <section id="aboutUs" class="aboutUs">
+        <div class="leftAboutUs">
+            <h1>Who are we?</h1>
+            <p> <span> Ape 30 technologies </span>is a tech company made up of a team of designers and developers.
+                We deal in Website design and development 
+                and mobile application design and development, both front-end and back-end.
+                We are motivated and driven towards a great customer 
+                service and an unforgettable experience through our service provision. 
+                We are driven towards the creation of the best end products according to customers needs, 
+                fully engaging the 
+                the customer throughout the development process. With us, you'll be able to mee all your digital 
+                needs to transform your dreams to reality.</p>
+        </div>
+
+        <div class="rightAboutUs">
+            <h1>Where are we?</h1>
+            <p> We are a Kenyan tech company based in Nairobi. All our operations are currently online.
+                You can reach us out <a href="contactUs">here</a> and talk to us on what you need built for you
+                and we will be ready and willing to deliver. In case you need a physical presence, that 
+                can also be organized and a perfect spot arranged for that.
+            </p>
+            <img class="niceGif" src={% static 'assetss/nice.gif' %}>
+        </div>
+       
+    </section>
+
+    <section id="ourWork" class="services">
+        <div class="leftDivServe">
+            <div class="serveWe">
+                <h1>Services we offer</h1>
+                <p>Our highly skilled personel are ready to deliver 
+                    whatever task you <br> have for us. 
+                    The duration of completeion the task highly depends <br> on the
+                    size of the project at hand.
+                </p>
+            </div>
+            
+            <img class="expo" src={% static 'assetss/coding.gif' %} alt="">
+        </div>
+
+        <div class="rightServicesDiv">
+            <hr class="servicesLine">
+            <div class="jobs">
+                <p>01. </p>
+                <div>
+                    <h2 >Web &nbsp; UX/ UI <br> design</h2> 
+                    <a class="discover"href="hireUs#webUI">Discover</a>
+                </div>
+                
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <hr class="servicesLine">
+
+            <div class="jobs">
+                <p>02. </p>
+                <div>
+                    <h2>Web<br> development</h2> 
+                    <a class="discover"href="hireUs#webDev">Discover</a>
+                </div>
+            </div>
+            <hr class="servicesLine">
+
+            <div class="jobs">
+                <p>03. </p>
+                <div>
+                    <h2>Mobile app <br>UX/UI  design</h2> 
+                    <a class="discover"href="hireUs#mobileUI">Discover</a>
+                </div>
+            </div>
+            <hr class="servicesLine">
+
+
+            <div class="jobs">
+                <p>04. </p>
+                <div>
+                    <h2>Mobile app <br> development</h2> 
+                    <a class="discover"href="hireUs#mobileDev">Discover</a>
+                </div>
+            </div>
+            <hr class="servicesLine">
+        </div>
+    </section>
+
+    <section class="tech">
+        <h1>Technologies we use</h1>
+        <div class="contCont">
+            <div class="techContainersMini">
+                <h3>Html, css and javascript</h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>We use html, css and javascript for front-end web development</h4>
+            </div>
+            <div class="techContainersMini">
+                <h3>React Native</h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>React native framework helps us create native mobile applications for both android and ios </h4>
+            </div>
+            <div class="techContainersMini">
+                <h3>Django and NodeJS</h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>We make use django framework nad nodejs for back-end development of websites and mobile applications</h4>
+            </div>
+            <div class="techContainersMini">
+                <h3>MongoDb and firebase</h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>MongoDB and firebase are used by our company mainly for database purposes when building mobile apps</h4>
+            </div>
+            <div class="techContainersMini">
+                <h3>Figma</h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>A very important tool for user interface design</h4>
+            </div>
+            <img class="code"  src={% static 'assetss/hpCode.gif' %}>
+           
+
+        </div>
+        
+    </section>
+
+
+
+    <section class="tech">
+        <h1>Our previous work</h1>
+        <div class="contCont">
+            <div onclick="goToAz()" class="prevWorkContainersMini">
+                
+                <h3>AZ Binary</h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>Crypto currency management <span>website</span> </h4>
+                <div class="onHovVisit"><h5><a href="https://www.azbinary.com/" target="_blank">Visit site</a> </h5> </div>
+            </div>
+            <div onclick="goToMsichana()" class="prevWorkContainersMini">
+                <h3>Msichana Empowerment Kuria</h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>Non-govermental organization <span>website</span> </h4>
+               <div class="onHovVisit"><h5><a href="https://www.msichanaempowermentkuria.org/" target="_blank">Visit site</a> </h5> </div>
+            </div>
+            <div onclick="goToApps()" class="prevWorkContainersMini">
+                <h3>My Doctor</h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>Health care <span>mobile application</span> </h4>
+                <div class="onHovVisit"><h5><a href="./mobileApps.html#myDoctor">Visit site</a> </h5> </div>
+            </div>
+            <div onclick="goToApps()" class="prevWorkContainersMini">
+                <h3>St. Peters' Diocese </h2>
+                <hr class="line" size="0.5" width="10%" color="gray">  
+                <h5>Church <span>mobile application</span> </h4>
+                <div class="onHovVisit"><h5><a href="./mobileApps.html#churchSec">Visit site</a> </h5> </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+  
+
+    <section class="cont">
+        <h1>Let's discuss your project</h1>
+        <p>Talk to us. Let us know what you need and an indepth understanding of your <br> 
+            project will surely help us deliver the project to your desire.
+        </p>
+        <button class="mainBtn" onclick="goToHireUs()">Contact us</button>
+    </section>
+
+    
+    <footer>
+            <div>
+                <h2>Follow us</h2>
+                <a href="https://www.instagram.com/ape30technologies/" target="_blank"> <img class="socials" src= {% static 'assetss/Instagram-logo-free-download-PNG.png' %} alt="instagram logo "></a>
+                <a href="https://twitter.com/Ape30Tech"target="_blank"> <img class="socials" src= {% static 'assetss/Logo-Twitter-icon-transparent-PNG.png' %} alt="twitter logo"></a>
+                <a href="https://www.facebook.com/Ape-30-Technologies-109660784993525/"target="_blank"> <img class="socials" src={% static 'assetss/Popular-facebook-Logo-png.png' %} alt="facebook logo"></a>
+                <a href="https://www.linkedin.com/company/ape-30-technologies/" target="_blank"> <img class="socials" src={% static 'assetss/Linkedin-logo-on-transparent-Background-PNG-.png' %} alt="linkedin logo"></a>
+            </div>
+            <div>
+                <h2>Contact us</h2> 
+                <h6> <a href="tel:+254724753175">+254724753175</a> </h6>
+                <h6> <a href="mailto:ape30technologies@gmail.com">ape30technologies@gmail.com</a> </h6>
+                <h6> <a href="mailto:ape30info@gmail.com">ape30info@gmail.com</a> </h6>
+                <h6> <a href="www.ape30technologies.com">www.ape30technologies.com</a> </h6>
+                         
+               
+            </div>
+            <div>
+                <h2>Quick links</h2>
+                <h6> <a class="current" href="/">Home</a> </h6>
+                <h6> <a href="#aboutUs">About us</a> </h6>
+                <h6> <a href="#ourWork">Our work</a> </h6>
+                <h6> <a href="contactUs">Contact us</a> </h6>          
+                <h6> <a href="hireUs">Hire us</a> </h6>
+                
+            </div>
+
+            <h4>Designed and developed by Ape 30 technologies</h4>
+    </footer>
+        
+    <script>
+        function goToAz() {
+            window.open ("https://www.azbinary.com/") ;
+        }
+
+        function goToMsichana() {
+            window.open ("https://www.msichanaempowermentkuria.org/") ;
+        }
+
+        function goToHireUs() {
+            location.replace("hireUs")
+        }
+        function goToApps(){
+            location.replace("mobileApps")
+        }
+
+        var menuList=document.getElementById("menuList")
+        menuList.style.maxHeight="0px";
+        function toggleMenu(){
+            if( menuList.style.maxHeight=="0px"){
+              
+              menuList.style.maxHeight="400px"           
+            }
+            
+            else{
+              menuList.style.maxHeight="0px"
+
+            }
+          }        
+
+
+        var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+    </script>
+    
+</body>
+</html>

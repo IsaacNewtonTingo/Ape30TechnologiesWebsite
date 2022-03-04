@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile apps || Ape 30 technologies</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" type="image/x-icon" href={% static 'assetss/logo.png' %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+
+    <script src="https://kit.fontawesome.com/0a5c0d1ef5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logoContainer">
+            <img class="logo" src={% static 'assetss/logo.png' %} alt="Ape30 technologies logo">
+            <img onclick="toggleMenu()" class="menuIcon" src={% static 'assetss/menu.png' %} alt="Ape30 technologies logo">
+            
+        </div>
+        <nav class="menuItems" id="menuList">
+            <ul>
+                <li><a  href="/" > Home</a> </li>
+                <li><a href="/#aboutUs"> About us</a> </li>
+                <li><a href="/#ourWork"> Our work</a> </li>
+                <li><a href="contactUs"> Contact us</a> </li>
+                <li><a href="hireUs"> Hire us</a> </li>
+               
+            </ul>
+        </nav>
+        
+    </header>
+
+    
+    <section class="apps">
+        <div id="myDoctor" class="myDoc">
+        <h1><span>"My Doctor"</span>  Mobile Application</h1>
+        <p>This is a self-diagnosis mobile application. Users enter their signs and symptoms
+            and in return, the application displays their potential ailment. Additionally, users can 
+            search for nearest ambulances and  health facilities.
+            During signup, users add next of kin contact details that they are able to cantact 
+            during and emergency. Their is also a records section where users can record the hospitals
+            visited and ambulance services used.
+        </p>
+
+        <div class="myDoctor">
+            <img src={% static 'assetss/IMG_2408.PNG' %} alt="my Doctor app ape 30 technologies">
+            <img src={% static 'assetss/IMG_2409.PNG' %} alt="my Doctor app ape 30 technologies">
+            <img src={% static 'assetss/IMG_2411.PNG' %} alt="my Doctor app ape 30 technologies">
+            <img src={% static 'assetss/IMG_2412.PNG' %} alt="my Doctor app ape 30 technologies">
+
+        </div>
+
+        <button onclick="downloadApp()" class="mainBtn">
+            <a href={% static 'assetss/MyDoctor-a5e16bdec81e404790e4273647f64e02-signed.apk' %} download>Download App</a>
+        </button>
+    </div>
+
+
+       
+            <h1 id="churchSec" ><span>"St. Peters, Dioces"</span>  Mobile Application (Still building)</h1>
+            <p>This is a church mobile application. Members are able to create an acoount and interact 
+                with the application. 
+                There is section where they get "Today's reading" which is posted by the admin. 
+                Every day, the admin, who is an official of the church, updates the readings.
+                Admin can also post announcements that will be visible to the users. They can join different groups
+                availble and can also give tithe, offering and a donation via the application.
+            </p>
+            <div class="myDoctor">
+                <img src={% static 'assetss/IMG_2415.PNG' %} alt="my Doctor app ape 30 technologies">
+                <img src={% static 'assetss/IMG_2416.PNG' %} alt="my Doctor app ape 30 technologies">
+                <img src={% static 'assetss/IMG_2417.PNG' %} alt="my Doctor app ape 30 technologies">
+                <img src={% static 'assetss/IMG_2419.PNG' %} alt="my Doctor app ape 30 technologies">
+
+            </div>
+      
+        
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <h2>Follow us</h2>
+            <a href="https://www.instagram.com/ape30technologies/" target="_blank"> <img class="socials" src= {% static 'assetss/Instagram-logo-free-download-PNG.png' %} alt="instagram logo "></a>
+            <a href="https://twitter.com/Ape30Tech"target="_blank"> <img class="socials" src= {% static 'assetss/Logo-Twitter-icon-transparent-PNG.png' %} alt="twitter logo"></a>
+            <a href="https://www.facebook.com/Ape-30-Technologies-109660784993525/"target="_blank"> <img class="socials" src={% static 'assetss/Popular-facebook-Logo-png.png' %} alt="facebook logo"></a>
+            <a href="https://www.linkedin.com/company/ape-30-technologies/" target="_blank"> <img class="socials" src={% static 'assetss/Linkedin-logo-on-transparent-Background-PNG-.png' %} alt="linkedin logo"></a>
+        </div>
+        <div>
+            <h2>Contact us</h2> 
+            <h6> <a href="tel:+254724753175">+254724753175</a> </h6>
+            <h6> <a href="mailto:ape30technologies@gmail.com">ape30technologies@gmail.com</a> </h6>
+            <h6> <a href="mailto:ape30info@gmail.com">ape30info@gmail.com</a> </h6>
+            <h6> <a href="www.ape30technologies.com">www.ape30technologies.com</a> </h6>
+                     
+           
+        </div>
+        <div>
+            <h2>Quick links</h2>
+            <h6> <a href="/">Home</a> </h6>
+            <h6> <a href="/#aboutUs">About us</a> </h6>
+            <h6> <a href="/#ourWork">Our work</a> </h6>
+            <h6> <a href="contactUs">Contact us</a> </h6>          
+            <h6> <a href="hireUs">Hire us</a> </h6>
+            
+        </div>
+
+        <h4>Designed and developed by Ape 30 technologies</h4>
+</footer>
+        
+    <script>
+        function goToAz() {
+            window.open ("https://www.azbinary.com/") ;
+        }
+
+        function goToMsichana() {
+            window.open ("https://www.msichanaempowermentkuria.org/") ;
+        }
+
+        function goToHireUs() {
+            location.replace("./hireUs.html")
+        }
+
+        var menuList=document.getElementById("menuList")
+        menuList.style.maxHeight="0px";
+        function toggleMenu(){
+            if( menuList.style.maxHeight=="0px"){
+              
+              menuList.style.maxHeight="400px"           
+            }
+            
+            else{
+              menuList.style.maxHeight="0px"
+
+            }
+          }      
+       
+
+
+        var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+    </script>
+    
+</body>
+</html>
